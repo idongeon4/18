@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>아희 코드 초대형</title>
+<style>
+  body {
+    background: black;
+    color: red;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: monospace;
+  }
+  .code {
+    white-space: pre-wrap;
+    font-size: 12vw;
+    text-align: center;
+    line-height: 1.1;
+  }
+  input[type="text"] {
+    margin-top: 30px;
+    font-size: 2rem;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+  }
+  button {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="code">밤밣따빠밣밟따뿌 빠맣파빨받밤뚜뭏 돋밬탕빠맣붏두붇 볻뫃박발뚷투뭏붖 뫃도뫃희멓뭏뭏붘 뫃봌토범더벌뿌뚜 뽑뽀멓멓더벓뻐뚠 뽀덩벐멓뻐덕더벅</div>
+  <input type="text" id="answer" placeholder="정답 입력" />
+  <button onclick="checkAnswer()">확인</button>
+  <script>
+    function checkAnswer() {
+      const ans = document.getElementById('answer').value.trim().toLowerCase();
+      if (ans === 'hello, world!'.toLowerCase()) {
+        window.location.href = 'https://luxury-fudge-6f7474.netlify.app';
+      } else {
+        alert('Wrong answer');
+      }
+    }
+  </script>
+</body>
+</html>
